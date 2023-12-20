@@ -3,8 +3,8 @@ from discord import app_commands
 from drawing import generate_board
 from data import units, players, unit_key, units_by_team, borders, place_unit
 from my_utils import MoveButton, MySelect, ButtonInfo
+from bot_server_info import TOKEN, server_id
 
-server_id = 875647041789906944
 
 # Define intents
 intents = discord.Intents.default()
@@ -126,6 +126,5 @@ async def inspect_army(interaction: discord.Interaction):
 
 
 # Run the bot
-TOKEN = 'MTE2MjQyNjU0NjY4Mjg3MTg0OQ.GrZ2Cp.H9SVkrwAefA-IqvZnNFgirXAMn13ubCYTp-Kcw'
 client.run(TOKEN)
 
